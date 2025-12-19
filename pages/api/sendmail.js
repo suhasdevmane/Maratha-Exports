@@ -48,7 +48,7 @@ export default (req, res) => {
       sizes="96x96"
       href="http://paulgoddarddesign.com/images/favicon.jpg"
     />
-    <title>Bikiology Contact</title>
+    <title>Maratha Exports Contact</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Mono"
       rel="stylesheet"

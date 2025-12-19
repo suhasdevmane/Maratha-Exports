@@ -415,7 +415,7 @@ export default function about() {
   return (
     <Layout>
       <NextSeo
-        title="About Us | Bikiology"
+        title="About Us | Maratha Exports"
         description="Through our years of experience, we've learned how to serve better by effective communications."
       />
       <div className={classes.root}>
@@ -449,8 +449,8 @@ export default function about() {
               by effective communications.
             </div>
             <div className={classes.belowFoldPara}>
-              We are a Canadian integrated Export-Import Company headquartered
-              in Alberta-Canada, committed to maximizing value by sustainably
+              We are an Indian integrated Export-Import Company registered 
+              in Maharashtra, committed to maximizing value by sustainably
               developing our product & services to our clients all over the
               world.
             </div>

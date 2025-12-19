@@ -426,9 +426,9 @@ export default function productsandservices() {
   return (
     <Layout>
       <NextSeo
-        title="Products & Services | Bikiology"
+        title="Products & Services | Maratha Exports"
         description="We export goods and services directly from the manufacturer,
-        producer, wholesaler and traders of Canada and other countries, or we find direct buyers in a certain country or in
+        producer, wholesaler and traders of India and other countries, or we find direct buyers in a certain country or in
         any other countries globally."
       />
       <div className={classes.root}>

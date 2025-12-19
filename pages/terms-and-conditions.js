@@ -100,9 +100,9 @@ export default function terms() {
   return (
     <Layout>
       <NextSeo
-        title="Terms & Conditions | Bikiology"
-        description="The materials on Bikiology Inc.'s website are provided on an 'as
-        is' basis. Bikiology Inc. makes no warranties, expressed or
+        title="Terms & Conditions | Maratha Exports"
+        description="The materials on Maratha Exports's website are provided on an 'as
+        is' basis. Maratha Exports makes no warranties, expressed or
         implied, and hereby disclaims and negates all other warranties
         including, without limitation, implied warranties or conditions of..."
       />
@@ -111,11 +111,11 @@ export default function terms() {
         <div className={classes.circle2}></div>
 
         <div className={classes.content}>
-          <div>Bikiology Inc. Terms of Service</div>
+          <div>Maratha Exports Terms of Service</div>
           <h3>1. Terms</h3>
           <p>
             By accessing the website at{" "}
-            <a href="https://www.bikiology.com">https://www.bikiology.com</a>,
+            <a href="https://www.marathaexports.com">https://www.marathaexports.com</a>,
             you are agreeing to be bound by these terms of service, all
             applicable laws and regulations, and agree that you are responsible
             for compliance with any applicable local laws. If you do not agree
@@ -127,7 +127,7 @@ export default function terms() {
           <ol type="a">
             <li>
               Permission is granted to temporarily download one copy of the
-              materials (information or software) on Bikiology Inc.'s website
+              materials (information or software) on Maratha Exports's website
               for personal, non-commercial transitory viewing only. This is the
               grant of a license, not a transfer of title, and under this
               license you may not:
@@ -139,7 +139,7 @@ export default function terms() {
                 </li>
                 <li>
                   attempt to decompile or reverse engineer any software
-                  contained on Bikiology Inc.'s website;
+                  contained on Maratha Exports's website;
                 </li>
                 <li>
                   remove any copyright or other proprietary notations from the
@@ -153,7 +153,7 @@ export default function terms() {
             </li>
             <li>
               This license shall automatically terminate if you violate any of
-              these restrictions and may be terminated by Bikiology Inc. at any
+              these restrictions and may be terminated by Maratha Exports at any
               time. Upon terminating your viewing of these materials or upon the
               termination of this license, you must destroy any downloaded
               materials in your possession whether in electronic or printed
@@ -163,8 +163,8 @@ export default function terms() {
           <h3>3. Disclaimer</h3>
           <ol type="a">
             <li>
-              The materials on Bikiology Inc.'s website are provided on an 'as
-              is' basis. Bikiology Inc. makes no warranties, expressed or
+              The materials on Maratha Exports's website are provided on an 'as
+              is' basis. Maratha Exports makes no warranties, expressed or
               implied, and hereby disclaims and negates all other warranties
               including, without limitation, implied warranties or conditions of
               merchantability, fitness for a particular purpose, or
@@ -172,7 +172,7 @@ export default function terms() {
               rights.
             </li>
             <li>
-              Further, Bikiology Inc. does not warrant or make any
+              Further, Maratha Exports does not warrant or make any
               representations concerning the accuracy, likely results, or
               reliability of the use of the materials on its website or
               otherwise relating to such materials or on any sites linked to
@@ -181,11 +181,11 @@ export default function terms() {
           </ol>
           <h3>4. Limitations</h3>
           <p>
-            In no event shall Bikiology Inc. or its suppliers be liable for any
+            In no event shall Maratha Exports or its suppliers be liable for any
             damages (including, without limitation, damages for loss of data or
             profit, or due to business interruption) arising out of the use or
-            inability to use the materials on Bikiology Inc.'s website, even if
-            Bikiology Inc. or a Bikiology Inc. authorized representative has
+            inability to use the materials on Maratha Exports's website, even if
+            Maratha Exports or a Maratha Exports authorized representative has
             been notified orally or in writing of the possibility of such
             damage. Because some jurisdictions do not allow limitations on
             implied warranties, or limitations of liability for consequential or
@@ -193,32 +193,32 @@ export default function terms() {
           </p>
           <h3>5. Accuracy of materials</h3>
           <p>
-            The materials appearing on Bikiology Inc.'s website could include
-            technical, typographical, or photographic errors. Bikiology Inc.
+            The materials appearing on Maratha Exports's website could include
+            technical, typographical, or photographic errors. Maratha Exports
             does not warrant that any of the materials on its website are
-            accurate, complete or current. Bikiology Inc. may make changes to
+            accurate, complete or current. Maratha Exports may make changes to
             the materials contained on its website at any time without notice.
-            However Bikiology Inc. does not make any commitment to update the
+            However Maratha Exports does not make any commitment to update the
             materials.
           </p>
           <h3>6. Links</h3>
           <p>
-            Bikiology Inc. has not reviewed all of the sites linked to its
+            Maratha Exports has not reviewed all of the sites linked to its
             website and is not responsible for the contents of any such linked
             site. The inclusion of any link does not imply endorsement by
-            Bikiology Inc. of the site. Use of any such linked website is at the
+            Maratha Exports of the site. Use of any such linked website is at the
             user's own risk.
           </p>
           <h3>7. Modifications</h3>
           <p>
-            Bikiology Inc. may revise these terms of service for its website at
+            Maratha Exports may revise these terms of service for its website at
             any time without notice. By using this website you are agreeing to
             be bound by the then current version of these terms of service.
           </p>
           <h3>8. Governing Law</h3>
           <p>
             These terms and conditions are governed by and construed in
-            accordance with the laws of Canada and you irrevocably submit to the
+            accordance with the laws of India and you irrevocably submit to the
             exclusive jurisdiction of the courts in that State or location.
           </p>
         </div>

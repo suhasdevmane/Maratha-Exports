@@ -484,9 +484,8 @@ export default function index() {
   return (
     <Layout>
       <NextSeo
-        title="Bikiology Inc."
-        description="We are committed to maximizing value by sustainably
-        developing our product & services to our clients all over the world."
+        title="Maratha Exports"
+        description="We are Indian export comany genestered in Maharashtra"
       />
       <div className={classes.root}>
         <div className={classes.aboveFold}>
@@ -496,10 +495,7 @@ export default function index() {
                 Your One Stop Export Import Source.
               </div>
               <p className={classes.paragraph}>
-                We are a Canadian integrated Export-Import Company headquartered
-                in Alberta-Canada, committed to maximizing value by sustainably
-                developing our product & services to our clients all over the
-                world.
+                We are Indian export comany genestered in Maharashtra
               </p>
               <div>
                 <ContactButton />
@@ -540,7 +536,7 @@ export default function index() {
                   <div className={classes.offerTitle}>Goods</div>
                 </div>
                 <div className={classes.offerText}>
-                  Bikiology Strives at Giving Customers The Best Quality of
+                  Maratha Exports Strives at Giving Customers The Best Quality of
                   Products and Nothing Less.
                 </div>
               </div>
@@ -570,7 +566,7 @@ export default function index() {
                   <div className={classes.offerTitle}>Prices</div>
                 </div>
                 <div className={classes.offerText}>
-                  Bikiology Gives the Best Prices in Canada For The Services and
+                  Maratha Exports Gives the Best Prices in India For The Services and
                   Products that We Provide.
                 </div>
               </div>

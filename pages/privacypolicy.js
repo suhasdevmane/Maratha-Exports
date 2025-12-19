@@ -88,8 +88,8 @@ export default function privacypolicy() {
   return (
     <Layout>
       <NextSeo
-        title="Privacy Policy | Bikiology"
-        description="Your privacy is important to us. It is Bikiology Inc.'s policy to respect your privacy regarding any information we may collect from you across our website..."
+        title="Privacy Policy | Maratha Exports"
+        description="Your privacy is important to us. It is Maratha Exports's policy to respect your privacy regarding any information we may collect from you across our website..."
       />
       <div className={classes.root}>
         <div className={classes.circle1}></div>
@@ -98,10 +98,10 @@ export default function privacypolicy() {
         <div className={classes.content}>
           <div>Privacy Policy</div>
           <p>
-            Your privacy is important to us. It is Bikiology Inc.'s policy to
+            Your privacy is important to us. It is Maratha Exports's policy to
             respect your privacy regarding any information we may collect from
             you across our website,{" "}
-            <a href="https://www.bikiology.com">https://www.bikiology.com</a>,
+            <a href="https://www.marathaexports.com">https://www.marathaexports.com</a>,
             and other sites we own and operate.
           </p>
           <p>

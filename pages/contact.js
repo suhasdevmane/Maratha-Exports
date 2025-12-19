@@ -150,20 +150,20 @@ export default function contact() {
     if (isMobile) {
       setSrc("/logo.png");
     } else {
-      setSrc("/whiteLogo.svg");
+      setSrc("/logoWhite.svg");
     }
   });
   return (
     <Layout whiteLogo={src}>
       <NextSeo
-        title="Contact | Bikiology"
-        description="Bikiology Strives at Giving Customers The Best Quality of Products and Nothing Less."
+        title="Contact | Maratha Exports"
+        description="Maratha Exports Strives at Giving Customers The Best Quality of Products and Nothing Less."
       />
       <div className={classes.root}>
         <div className={classes.inner}>
           <div className={classes.leftPanel}>
             <div className={classes.leftPanelText}>
-              Bikiology is Dedicated to Creating a Better Future for Everyone.
+              Maratha Exports is Dedicated to Creating a Better Future for Everyone.
             </div>
             <div>
               <img
@@ -187,7 +187,7 @@ export default function contact() {
                   }}
                   validate={(values) => {
                     const errors = {};
-                    const phoneParse = parsePhoneNumber(values.phone, "CA");
+                    const phoneParse = parsePhoneNumber(values.phone, "IN");
                     if (!values.email) {
                       errors.email = "Required";
                     } else if (

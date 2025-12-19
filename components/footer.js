@@ -190,21 +190,15 @@ export default function footer() {
         <div className={classes.sectionSupport}>
           <div className={classes.header}>Support</div>
           <div className={classes.link}>
-            <div className={classes.email}>Email: info@bikiology.com</div>
+            <div className={classes.email}>Email: Contact@marathaexports.com</div>
           </div>
 
           <div className={classes.phone}>
-            <div>+ 1 780 667 6622 (Corporate office)</div>
+            <div>+917499968836</div>
           </div>
 
           <div className={classes.phone}>
-            <div>+ 1 403 707 9091 (Sales office)</div>
-          </div>
-          <div className={classes.phone}>
-            <div>+ 1 888 722 0111 (Toll free)</div>
-          </div>
-          <div className={classes.phone}>
-            <div>+ 1 888 722 0111 (Fax)</div>
+            <div>+919527931986</div>
           </div>
         </div>
         <div className={classes.section}>
@@ -245,8 +239,7 @@ export default function footer() {
       </div>
 
       <div className={classes.locationRoot}>
-        Bikiology Inc. 10405 Jasper Ave, Suite # 700-21, Standard Life
-        Building, Edmonton, AB. T5J3S2. Canada.
+        Maratha Exports. AirPort , Karad, Maharashtra, India 416114.
       </div>
     </div>
   );

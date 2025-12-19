@@ -250,7 +250,7 @@ export default function careers() {
   return (
     <Layout>
       <NextSeo
-        title="Careers | Bikiology"
+        title="Careers | Maratha Exports"
         description="We hire very often; please keep checking our job board and job postings frequently. We always accept resumes for positions that may become available in the future."
       />
       <div className={classes.root}>
@@ -300,15 +300,15 @@ export default function careers() {
                   <mark className={classes.mark}>By Email:</mark>
                 </div>
                 <div className={classes.howToApplyContactSub}>
-                  info@bikiology.com
+                  Contact@marathaexports.com
                 </div>
               </div>
               <div>
                 <div className={classes.howToApplyContactTitle}>
-                  <mark className={classes.mark}>By Fax:</mark>
+                  <mark className={classes.mark}>By Phone:</mark>
                 </div>
                 <div className={classes.howToApplyContactSub}>
-                  + 1 888 722 0111
+                  +917499968836 / +919527931986
                 </div>
               </div>
               <div>
@@ -316,8 +316,7 @@ export default function careers() {
                   <mark className={classes.mark}>By Post: </mark>
                 </div>
                 <div className={classes.howToApplyContactSub}>
-                  Bikiology Inc. 10405 Jasper Ave. (Suite # 700-21, Standard
-                  Life Building). Edmonton, AB, T5J3S2, Canada.
+                  Maratha Exports. AirPort , Karad, Maharashtra, India 416114.
                 </div>
               </div>
             </div>
