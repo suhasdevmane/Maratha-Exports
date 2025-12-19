@@ -5,6 +5,8 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../components/theme";
 import "../styles/globals.css";
+import { DefaultSeo } from "next-seo";
+
 export default function MyApp(props) {
   const { Component, pageProps } = props;
 
@@ -19,12 +21,15 @@ export default function MyApp(props) {
   return (
     <React.Fragment>
       <Head>
-        <title>Maratha Exports</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
       </Head>
+      <DefaultSeo
+        title="Maratha Exports"
+        description="We are Indian export comany genestered in Maharashtra"
+      />
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
