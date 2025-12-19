@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       fontFamily: "Gilroy, sans-serif",
-      background: "white",
+      background: "#121212",
     },
     inner: {
       display: "flex",
@@ -71,8 +71,8 @@ const useStyles = makeStyles((theme) =>
       },
     },
     rightPanel: {
-      background: "white",
-      color: "black",
+      background: "#121212",
+      color: "white",
       minHeight: "100%",
       width: "100%",
       display: "flex",
@@ -117,14 +117,14 @@ const useStyles = makeStyles((theme) =>
       width: "100%",
     },
     button: {
-      background: "#F8BB86",
+      background: "#2979ff",
       padding: "1rem",
       color: "white",
       textTransform: "none",
       fontWeight: "bold",
       fontFamily: "Gilroy, sans-serif",
       "&:hover": {
-        background: "#FFB16C",
+        background: "#1565c0",
       },
     },
     margin: {
@@ -140,12 +140,24 @@ const useStyles = makeStyles((theme) =>
     errorDiv: {
       marginLeft: "-1.5rem",
     },
+    statusMessage: {
+      fontFamily: "Gilroy, sans-serif",
+      fontWeight: "bold",
+      marginTop: "1rem",
+    },
+    successMessage: {
+      color: "#66bb6a",
+    },
+    errorMessage: {
+      color: "#ef5350",
+    },
   })
 );
 export default function contact() {
   const classes = useStyles();
   const isMobile = useMediaQuery({ query: `(max-width: 1049px)` });
   const [src, setSrc] = useState();
+  const [submissionStatus, setSubmissionStatus] = useState();
   useEffect(() => {
     if (isMobile) {
       setSrc("/logo.png");
@@ -216,17 +228,31 @@ export default function contact() {
                     }
                     return errors;
                   }}
-                  onSubmit={(values, { setSubmitting }) => {
-                    axios({
-                      method: "post",
-                      url: "/contact.php",
-                      data: {
-                        values: values,
-                      },
-                    }).then((res) => {
-                      console.log(res);
-                    });
-                    setSubmitting(false);
+                  onSubmit={async (values, { setSubmitting, resetForm }) => {
+                    setSubmitting(true);
+                    try {
+                      await axios({
+                        method: "post",
+                        url: "/contact.php",
+                        data: {
+                          values,
+                        },
+                      });
+                      setSubmissionStatus({
+                        type: "success",
+                        message:
+                          "Thank you for contacting us. Your query has been received and our team will reach out using the details you provided.",
+                      });
+                      resetForm();
+                    } catch (error) {
+                      setSubmissionStatus({
+                        type: "error",
+                        message:
+                          "We were unable to submit your query. Please try again or contact us directly.",
+                      });
+                    } finally {
+                      setSubmitting(false);
+                    }
                   }}
                   className={classes.flexCenter}
                 >
@@ -455,6 +481,17 @@ export default function contact() {
                           Submit
                         </Button>
                       </div>
+                      {submissionStatus && (
+                        <div
+                          className={`${classes.statusMessage} ${
+                            submissionStatus.type === "success"
+                              ? classes.successMessage
+                              : classes.errorMessage
+                          }`}
+                        >
+                          {submissionStatus.message}
+                        </div>
+                      )}
                     </div>
                   )}
                 </Formik>

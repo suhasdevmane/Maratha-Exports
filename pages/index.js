@@ -23,9 +23,9 @@ const useStyles = makeStyles((theme) =>
       justifyItems: "center",
       alignContent: "center",
       height: "100vh",
-      background: "white",
+      background: "#121212",
       position: "relative",
-      color: "black",
+      color: "white",
       overflow: "hidden",
     },
     header: {
@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) =>
       textAlign: "center",
       maxWidth: "50rem",
       fontWeight: 600,
-      color: "grey",
+      color: "#b0bec5",
       [theme.breakpoints.down("950")]: {
         fontSize: "0.95rem",
         marginRight: "3rem",
@@ -87,7 +87,7 @@ const useStyles = makeStyles((theme) =>
     },
     aboveFoldIcon: {
       fontSize: "3.2rem",
-      color: "black",
+      color: "white",
     },
     aboveFoldTextBoxInner: {
       display: "flex",
@@ -107,7 +107,7 @@ const useStyles = makeStyles((theme) =>
       "-khtml-opacity": "15%",
       opacity: "15%",
       fontSize: "65rem",
-      color: "#F8BB86",
+      color: "#90caf9",
       right: 0,
       [theme.breakpoints.down("1680")]: {
         right: "-5rem",
@@ -251,7 +251,7 @@ const useStyles = makeStyles((theme) =>
       fontSize: "2.25rem",
     },
     iconOuter: {
-      background: "#F8BB86",
+      background: "#1e88e5",
       padding: "0.7rem",
       borderRadius: "20%",
       display: "flex",
@@ -267,10 +267,10 @@ const useStyles = makeStyles((theme) =>
       marginLeft: "1rem",
       marginTop: "0.5rem",
       lineHeight: "2.5rem",
-      color: "#525252",
+      color: "white",
     },
     offerText: {
-      color: "grey",
+      color: "#b0bec5",
       fontWeight: 600,
       fontSize: "1.1rem",
       marginTop: "0.8rem",
@@ -322,7 +322,7 @@ const useStyles = makeStyles((theme) =>
       position: "absolute",
       width: "25rem",
       height: "25rem",
-      background: "#F8BB86",
+      background: "#1e88e5",
       opacity: "25%",
       "-moz-opacity": "25%",
       "-khtml-opacity": "25%",
@@ -335,7 +335,7 @@ const useStyles = makeStyles((theme) =>
       position: "absolute",
       width: "20rem",
       height: "20rem",
-      boxShadow: "0 0 0 0.5rem #F8BB86",
+      boxShadow: "0 0 0 0.5rem #1e88e5",
       opacity: "25%",
       "-moz-opacity": "25%",
       "-khtml-opacity": "25%",
@@ -468,13 +468,13 @@ const useStyles = makeStyles((theme) =>
       },
     },
     servicesButton: {
-      color: "black",
+      color: "white",
       fontFamily: "Gilroy, sans-serif",
       fontWeight: "bold",
-      backgroundColor: "white",
+      backgroundColor: "#2979ff",
       padding: "1rem",
       "&:hover": {
-        background: "white",
+        background: "#1565c0",
       },
     },
   })

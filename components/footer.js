@@ -4,10 +4,11 @@ import Link from "next/link";
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
-      background: "white",
+      background: "#121212",
+      color: "white",
     },
     outer: {
-      background: "white",
+      background: "#121212",
       fontFamily: "Gilroy, sans-serif",
       fontSize: "1.1rem",
       display: "flex",
@@ -63,15 +64,16 @@ const useStyles = makeStyles((theme) =>
       fontSize: "1.3rem",
       fontWeight: "bold",
       marginBottom: "0.5rem",
+      color: "white",
     },
     link: {
-      color: "#777777",
+      color: "#b0bec5",
       fontWeight: 600,
       marginBottom: "0.5rem",
     },
     phone: {
       fontSize: "1rem",
-      color: "#777777",
+      color: "#b0bec5",
       fontWeight: 600,
       marginBottom: "0.1rem",
     },

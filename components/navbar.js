@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
   appBarSolidNav: {
     width: "100%",
     position: "fixed",
-    backgroundColor: "white",
+    backgroundColor: "#121212",
     fontFamily: "Gilroy, sans-serif",
     transition: "all 0.1s ease",
     [theme.breakpoints.down("930")]: {
@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
   appBarScroll: {
     width: "100%",
     position: "fixed",
-    backgroundColor: "white",
+    backgroundColor: "#121212",
     fontFamily: "Gilroy, sans-serif",
     transition: "all 0.1s ease",
     [theme.breakpoints.down("930")]: {
@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("930")]: {
       transition: "all 0.1s ease",
       display: "flex",
-      backgroundColor: "white",
+      backgroundColor: "#121212",
       flexDirection: "row",
     },
   },
@@ -87,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("930")]: {
       transition: "all 0.1s ease",
       display: "flex",
-      backgroundColor: "white",
+      backgroundColor: "#121212",
       flexDirection: "row",
     },
   },
@@ -133,7 +133,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "1rem",
     marginLeft: "1rem",
     fontSize: "1.1rem",
-    color: "black",
+    color: "white",
     fontWeight: "bold",
     cursor: "pointer",
   },

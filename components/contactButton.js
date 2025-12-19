@@ -4,14 +4,14 @@ import Button from "@material-ui/core/Button";
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
-      background: "#F8BB86",
+      background: "#2979ff",
       padding: "1rem",
       color: "white",
       textTransform: "none",
       fontWeight: "bold",
       fontFamily: "Gilroy, sans-serif",
       "&:hover": {
-        background: "#FFB16C",
+        background: "#1565c0",
       },
     },
   })
