@@ -492,7 +492,8 @@ export default function productsandservices() {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
 
-  const handleClickOpen = () => {
+  const handleClickOpen = (e) => {
+    e.preventDefault();
     setOpen(true);
   };
 
@@ -604,9 +605,9 @@ export default function productsandservices() {
           <div className={classes.productsHeader}>The Products We Provide</div>
           <div className={classes.productsSub}>But Not Limited To</div>
           <div className={classes.productsGrid}>
-            {products.slice(0, 9).map((i) => {
+            {products.slice(0, 9).map((i, index) => {
               return (
-                <div className={classes.productsGridChild}>
+                <div key={index} className={classes.productsGridChild}>
                   <img src={i.img} alt={i.name} />
                   <div>{i.name}</div>
                 </div>
@@ -614,6 +615,7 @@ export default function productsandservices() {
             })}
           </div>
           <Button
+            type="button"
             variant="contained"
             className={classes.viewAllButton}
             endIcon={<ArrowForwardIcon style={{ color: "white" }} />}

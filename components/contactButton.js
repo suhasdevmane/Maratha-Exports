@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) =>
 export default function contactButton() {
   const classes = useStyles();
   return (
-    <Link href="/contact" passHref>
+    <Link href="/contact" passHref legacyBehavior>
       <Button className={classes.root} component="a">
         Get In Touch
       </Button>

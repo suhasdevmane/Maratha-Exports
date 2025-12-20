@@ -578,17 +578,17 @@ export default function index() {
           <div className={classes.servicesHeader}>The Products We Provide</div>
           <div className={classes.servicesSub}>But Not Limited To</div>
           <div className={classes.servicesGrid}>
-            {products.slice(0, 6).map((i) => {
+            {products.slice(0, 6).map((i, index) => {
               return (
-                <div className={classes.servicesGridChild}>
+                <div key={index} className={classes.servicesGridChild}>
                   <img src={i.img} alt={i.name} />
                   <div>{i.name}</div>
                 </div>
               );
             })}
-            {addOn.slice(0, 6).map((i) => {
+            {addOn.slice(0, 6).map((i, index) => {
               return (
-                <div className={classes.servicesGridChild}>
+                <div key={index} className={classes.servicesGridChild}>
                   <img src={i.img} alt={i.name} />
                   <div>{i.name}</div>
                 </div>
@@ -596,8 +596,8 @@ export default function index() {
             })}
           </div>
           <div>
-            <Link href="/products-and-services">
-              <Button className={classes.servicesButton}>
+            <Link href="/products-and-services" passHref legacyBehavior>
+              <Button className={classes.servicesButton} component="a">
                 See All Products
               </Button>
             </Link>

@@ -570,7 +570,7 @@ export default function about() {
               <div className={classes.teamName}>Mrs Ankita Devmane</div>
               <div className={classes.teamRole}>Founder</div>
               <div className={classes.teamDesc}>
-                A visionary leader with over 20 years of experience in the global
+                A visionary leader with over 2 years of experience in the global
                 trade industry. Dedicated to bridging the gap between markets and
                 fostering international partnerships that drive sustainable growth.
               </div>
