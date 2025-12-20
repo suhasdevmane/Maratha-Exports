@@ -31,8 +31,8 @@ import MenuIcon from "@material-ui/icons/Menu";
 const useStyles = makeStyles((theme) => ({
   appBar: {
     width: "100%",
-    position: "fixed",
-    backgroundColor: "transparent",
+    position: "static",
+    backgroundColor: "white",
     fontFamily: "Gilroy, sans-serif",
     transition: "all 0.1s ease",
     [theme.breakpoints.down("930")]: {
@@ -41,8 +41,8 @@ const useStyles = makeStyles((theme) => ({
   },
   appBarSolidNav: {
     width: "100%",
-    position: "fixed",
-    backgroundColor: "#121212",
+    position: "static",
+    backgroundColor: "white",
     fontFamily: "Gilroy, sans-serif",
     transition: "all 0.1s ease",
     [theme.breakpoints.down("930")]: {
@@ -51,8 +51,8 @@ const useStyles = makeStyles((theme) => ({
   },
   appBarScroll: {
     width: "100%",
-    position: "fixed",
-    backgroundColor: "#121212",
+    position: "static",
+    backgroundColor: "white",
     fontFamily: "Gilroy, sans-serif",
     transition: "all 0.1s ease",
     [theme.breakpoints.down("930")]: {
@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("930")]: {
       transition: "all 0.1s ease",
       display: "flex",
-      backgroundColor: "#121212",
+      backgroundColor: "white",
       flexDirection: "row",
     },
   },
@@ -87,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("930")]: {
       transition: "all 0.1s ease",
       display: "flex",
-      backgroundColor: "#121212",
+      backgroundColor: "white",
       flexDirection: "row",
     },
   },
@@ -133,7 +133,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "1rem",
     marginLeft: "1rem",
     fontSize: "1.1rem",
-    color: "white",
+    color: "black",
     fontWeight: "bold",
     cursor: "pointer",
   },
@@ -351,13 +351,7 @@ export default function navbar({ solidNav, whiteLogo }) {
         <div className={classes.root}>
           <div>
             <img
-              src={
-                whiteLogo !== undefined
-                  ? whiteLogoState === false
-                    ? "/logo.png"
-                    : whiteLogo
-                  : "/logo.png"
-              }
+              src="/logo.png"
               alt="logo"
               className={classes.image}
             />

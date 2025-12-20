@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { makeStyles, createStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 const useStyles = makeStyles((theme) =>
@@ -18,5 +19,11 @@ const useStyles = makeStyles((theme) =>
 );
 export default function contactButton() {
   const classes = useStyles();
-  return <Button className={classes.root}>Get In Touch</Button>;
+  return (
+    <Link href="/contact" passHref>
+      <Button className={classes.root} component="a">
+        Get In Touch
+      </Button>
+    </Link>
+  );
 }

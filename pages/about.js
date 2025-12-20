@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) =>
       position: "relative",
       minHeight: "30rem",
       flexDirection: "column",
-      background: "white",
+      background: "#121212",
       overflow: "hidden",
       height: "100vh",
       zIndex: 1,
@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) =>
       },
     },
     aboveFoldCircle3: {
-      background: "#F8BB86",
+      background: "#2979ff",
       width: "22.5rem",
       height: "22.5rem",
       position: "absolute",
@@ -99,7 +99,7 @@ const useStyles = makeStyles((theme) =>
       opacity: "20%",
       "-moz-opacity": "20%",
       "-khtml-opacity": "20%",
-      boxShadow: "0 0 0 0.5rem #F8BB86",
+      boxShadow: "0 0 0 0.5rem #2979ff",
       right: "-7rem",
       bottom: "-5rem",
       zIndex: -1,
@@ -113,13 +113,13 @@ const useStyles = makeStyles((theme) =>
       opacity: "20%",
       "-moz-opacity": "20%",
       "-khtml-opacity": "20%",
-      boxShadow: "0 0 0 0.5rem #F8BB86",
+      boxShadow: "0 0 0 0.5rem #2979ff",
       left: "-7rem",
       top: "-5rem",
       zIndex: -1,
     },
     objectiveCircle2: {
-      background: "#F8BB86",
+      background: "#2979ff",
       width: "17.5rem",
       height: "17.5rem",
       position: "absolute",
@@ -138,8 +138,8 @@ const useStyles = makeStyles((theme) =>
       marginRight: "1.5rem",
     },
     coreValues: {
-      background: "white",
-      color: "#525252",
+      background: "#121212",
+      color: "white",
       display: "flex",
       padding: "5rem",
       justifyContent: "center",
@@ -191,10 +191,10 @@ const useStyles = makeStyles((theme) =>
     },
     mark: {
       display: "inline-block",
-      backgroundColor: "rgba(248, 187, 134, 0.70)",
+      backgroundColor: "rgba(41, 121, 255, 0.3)",
       paddingBottom: "1.9rem",
       lineHeight: "0",
-      color: "#525252",
+      color: "white",
       whiteSpace: "nowrap",
       [theme.breakpoints.down("600")]: {
         paddingBottom: "1.4rem",
@@ -408,6 +408,72 @@ const useStyles = makeStyles((theme) =>
         lineHeight: "2rem",
       },
     },
+    teamSection: {
+      backgroundColor: "#f5f5f5",
+      padding: "5rem 2rem",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+    },
+    teamHeader: {
+      fontSize: "3.5rem",
+      fontWeight: "bold",
+      marginBottom: "4rem",
+      textAlign: "center",
+      color: "#333",
+      [theme.breakpoints.down("600")]: {
+        fontSize: "2.5rem",
+      },
+    },
+    teamGrid: {
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+      gap: "3rem",
+      maxWidth: "80rem",
+      width: "100%",
+    },
+    teamCard: {
+      backgroundColor: "white",
+      borderRadius: "1rem",
+      overflow: "hidden",
+      boxShadow: "0 10px 20px rgba(0,0,0,0.1)",
+      transition: "transform 0.3s ease",
+      "&:hover": {
+        transform: "translateY(-10px)",
+      },
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      textAlign: "center",
+      padding: "2rem",
+    },
+    teamImg: {
+      width: "10rem",
+      height: "10rem",
+      borderRadius: "50%",
+      objectFit: "cover",
+      marginBottom: "1.5rem",
+      border: "4px solid #2979ff",
+    },
+    teamName: {
+      fontSize: "1.5rem",
+      fontWeight: "bold",
+      color: "#333",
+      marginBottom: "0.5rem",
+    },
+    teamRole: {
+      fontSize: "1.1rem",
+      color: "#2979ff",
+      fontWeight: "bold",
+      marginBottom: "1rem",
+      textTransform: "uppercase",
+      letterSpacing: "0.1rem",
+    },
+    teamDesc: {
+      fontSize: "1rem",
+      color: "#666",
+      lineHeight: "1.6",
+    },
   })
 );
 export default function about() {
@@ -490,6 +556,55 @@ export default function about() {
             <mark className={classes.mark}>innovation,</mark>{" "}
             <mark className={classes.mark}>efficiency</mark> and{" "}
             <mark className={classes.mark}>cost-effectiveness.</mark>
+          </div>
+        </div>
+        <div className={classes.teamSection}>
+          <div className={classes.teamHeader}>Meet Our Team</div>
+          <div className={classes.teamGrid}>
+            <div className={classes.teamCard}>
+              <img
+                src="/team/founder.png"
+                alt="Founder"
+                className={classes.teamImg}
+              />
+              <div className={classes.teamName}>Mrs Ankita Devmane</div>
+              <div className={classes.teamRole}>Founder</div>
+              <div className={classes.teamDesc}>
+                A visionary leader with over 20 years of experience in the global
+                trade industry. Dedicated to bridging the gap between markets and
+                fostering international partnerships that drive sustainable growth.
+              </div>
+            </div>
+
+            <div className={classes.teamCard}>
+              <img
+                src="/team/ceo.png"
+                alt="SEO Specialist"
+                className={classes.teamImg}
+              />
+              <div className={classes.teamName}>Dr Suhas Devmane</div>
+              <div className={classes.teamRole}>CEO</div>
+              <div className={classes.teamDesc}>
+                Driving our digital presence and global visibility. Specializes in
+                market analysis and digital strategies to connect our products
+                with the right audience across the globe.
+              </div>
+            </div>
+
+            <div className={classes.teamCard}>
+              <img
+                src="/team/md.png"
+                alt="Managing Director"
+                className={classes.teamImg}
+              />
+              <div className={classes.teamName}>Mr Aniket Kamble</div>
+              <div className={classes.teamRole}>Managing Director</div>
+              <div className={classes.teamDesc}>
+                Expert in operational excellence and strategic planning. Ensures
+                seamless execution of import-export processes, maintaining the
+                highest standards of quality and efficiency for our clients.
+              </div>
+            </div>
           </div>
         </div>
       </div>

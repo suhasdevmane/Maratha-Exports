@@ -70,6 +70,15 @@ const useStyles = makeStyles((theme) =>
         marginBottom: "3.5rem",
       },
     },
+    contactInfo: {
+      marginTop: "2rem",
+      textAlign: "center",
+      fontSize: "1.2rem",
+      fontWeight: "bold",
+      "& > div": {
+        marginBottom: "0.5rem",
+      },
+    },
     rightPanel: {
       background: "#121212",
       color: "white",
@@ -176,6 +185,10 @@ export default function contact() {
           <div className={classes.leftPanel}>
             <div className={classes.leftPanelText}>
               Maratha Exports is Dedicated to Creating a Better Future for Everyone.
+            </div>
+            <div className={classes.contactInfo}>
+              <div>For General Inquiries: contact@marathaexports.com</div>
+              <div>For Support: support@marathaexports.com</div>
             </div>
             <div>
               <img

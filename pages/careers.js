@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) =>
       position: "relative",
       minHeight: "30rem",
       flexDirection: "column",
-      background: "white",
+      background: "#121212",
       overflow: "hidden",
       height: "100vh",
       zIndex: 1,
@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) =>
       },
     },
     aboveFoldCircle3: {
-      background: "#F8BB86",
+      background: "#2979ff",
       width: "22.5rem",
       height: "22.5rem",
       position: "absolute",
@@ -101,7 +101,7 @@ const useStyles = makeStyles((theme) =>
       opacity: "20%",
       "-moz-opacity": "20%",
       "-khtml-opacity": "20%",
-      boxShadow: "0 0 0 0.5rem #F8BB86",
+      boxShadow: "0 0 0 0.5rem #2979ff",
       right: "5rem",
       bottom: "20rem",
       zIndex: -1,
@@ -167,7 +167,8 @@ const useStyles = makeStyles((theme) =>
       },
     },
     howToApply: {
-      background: "white",
+      background: "#121212",
+      color: "white",
     },
     howToApplyTitle: {
       textAlign: "center",
@@ -238,10 +239,10 @@ const useStyles = makeStyles((theme) =>
     },
     mark: {
       display: "inline-block",
-      backgroundColor: "rgba(248, 187, 134, 0.5)",
+      backgroundColor: "rgba(41, 121, 255, 0.3)",
       paddingBottom: "1.9rem",
       lineHeight: 0,
-      color: "black",
+      color: "White",
     },
   })
 );
@@ -300,7 +301,9 @@ export default function careers() {
                   <mark className={classes.mark}>By Email:</mark>
                 </div>
                 <div className={classes.howToApplyContactSub}>
-                  Contact@marathaexports.com
+                  contact@marathaexports.com
+                  <br />
+                  support@marathaexports.com
                 </div>
               </div>
               <div>
@@ -308,7 +311,7 @@ export default function careers() {
                   <mark className={classes.mark}>By Phone:</mark>
                 </div>
                 <div className={classes.howToApplyContactSub}>
-                  +917499968836 / +919527931986
+                  +917499968836 / +919527931986 / +919823691959
                 </div>
               </div>
               <div>
@@ -316,7 +319,7 @@ export default function careers() {
                   <mark className={classes.mark}>By Post: </mark>
                 </div>
                 <div className={classes.howToApplyContactSub}>
-                  Maratha Exports. AirPort , Karad, Maharashtra, India 416114.
+                  Maratha Exports.  Karad, Dist: satara, KARAD, MAHARASHTRA 415124, India
                 </div>
               </div>
             </div>

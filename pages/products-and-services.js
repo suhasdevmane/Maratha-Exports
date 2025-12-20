@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../components/layout";
 import { makeStyles, createStyles } from "@material-ui/core/styles";
 import ContactButton from "../components/contactButton";
@@ -12,6 +12,16 @@ import BuildIcon from "@material-ui/icons/Build";
 import BusinessIcon from "@material-ui/icons/Business";
 import PhonelinkIcon from "@material-ui/icons/Phonelink";
 import { NextSeo } from "next-seo";
+import Button from "@material-ui/core/Button";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import Dialog from "@material-ui/core/Dialog";
+import DialogContent from "@material-ui/core/DialogContent";
+import Card from "@material-ui/core/Card";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import Typography from "@material-ui/core/Typography";
+import IconButton from "@material-ui/core/IconButton";
+import CloseIcon from "@material-ui/icons/Close";
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
@@ -26,7 +36,8 @@ const useStyles = makeStyles((theme) =>
       position: "relative",
       minHeight: "30rem",
       flexDirection: "column",
-      background: "white",
+      background: "#121212",
+      color: "white",
       overflow: "hidden",
       height: "100vh",
       zIndex: 1,
@@ -79,7 +90,7 @@ const useStyles = makeStyles((theme) =>
       },
     },
     aboveFoldCircle3: {
-      background: "#F8BB86",
+      background: "#2979ff",
       width: "22.5rem",
       height: "22.5rem",
       position: "absolute",
@@ -111,7 +122,7 @@ const useStyles = makeStyles((theme) =>
       opacity: "20%",
       "-moz-opacity": "20%",
       "-khtml-opacity": "20%",
-      boxShadow: "0 0 0 0.5rem #F8BB86",
+      boxShadow: "0 0 0 0.5rem #2979ff",
       left: "-5rem",
       top: "7rem",
       zIndex: -1,
@@ -135,7 +146,7 @@ const useStyles = makeStyles((theme) =>
       fontSize: "2.25rem",
     },
     iconOuter: {
-      background: "#F8BB86",
+      background: "#2979ff",
       padding: "0.7rem",
       borderRadius: "20%",
       display: "flex",
@@ -152,14 +163,14 @@ const useStyles = makeStyles((theme) =>
       marginTop: "auto",
       marginBottom: "auto",
       lineHeight: "2.5rem",
-      color: "#525252",
+      color: "white",
       [theme.breakpoints.down("500")]: {
         fontSize: "1.75rem",
         marginLeft: "0.5rem",
       },
     },
     servicesText: {
-      color: "grey",
+      color: "#b0bec5",
       fontWeight: 600,
       fontSize: "1rem",
       marginTop: "0.8rem",
@@ -419,10 +430,76 @@ const useStyles = makeStyles((theme) =>
         },
       },
     },
+    viewAllButton: {
+      marginTop: "2rem",
+      background: "#2979ff",
+      color: "white",
+      padding: "1rem 2rem",
+      fontSize: "1.1rem",
+      fontWeight: "bold",
+      fontFamily: "Gilroy, sans-serif",
+      textTransform: "none",
+      "&:hover": {
+        background: "#1565c0",
+      },
+      "& .MuiButton-endIcon": {
+        marginLeft: "1rem",
+      },
+    },
+    dialogContent: {
+      background: "#121212",
+      padding: "2rem",
+    },
+    dialogGrid: {
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
+      gap: "2rem",
+    },
+    card: {
+      background: "#1e1e1e",
+      color: "white",
+      height: "100%",
+      display: "flex",
+      flexDirection: "column",
+    },
+    cardMedia: {
+      height: 200,
+    },
+    cardContent: {
+      flexGrow: 1,
+    },
+    cardTitle: {
+      fontFamily: "Gilroy, sans-serif",
+      fontWeight: "bold",
+      fontSize: "1.25rem",
+      marginBottom: "0.5rem",
+    },
+    cardDesc: {
+      fontFamily: "Gilroy, sans-serif",
+      color: "#b0bec5",
+      fontSize: "0.9rem",
+    },
+    closeButton: {
+      position: "absolute",
+      right: theme.spacing(1),
+      top: theme.spacing(1),
+      color: "white",
+      zIndex: 1,
+    },
   })
 );
 export default function productsandservices() {
   const classes = useStyles();
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <Layout>
       <NextSeo
@@ -527,7 +604,7 @@ export default function productsandservices() {
           <div className={classes.productsHeader}>The Products We Provide</div>
           <div className={classes.productsSub}>But Not Limited To</div>
           <div className={classes.productsGrid}>
-            {products.map((i) => {
+            {products.slice(0, 9).map((i) => {
               return (
                 <div className={classes.productsGridChild}>
                   <img src={i.img} alt={i.name} />
@@ -536,7 +613,71 @@ export default function productsandservices() {
               );
             })}
           </div>
+          <Button
+            variant="contained"
+            className={classes.viewAllButton}
+            endIcon={<ArrowForwardIcon style={{ color: "white" }} />}
+            onClick={handleClickOpen}
+          >
+            View All Products
+          </Button>
         </div>
+
+        <Dialog
+          open={open}
+          onClose={handleClose}
+          maxWidth="lg"
+          fullWidth
+          PaperProps={{
+            style: {
+              backgroundColor: "#121212",
+              boxShadow: "none",
+            },
+          }}
+        >
+          <IconButton
+            aria-label="close"
+            className={classes.closeButton}
+            onClick={handleClose}
+          >
+            <CloseIcon />
+          </IconButton>
+          <DialogContent className={classes.dialogContent}>
+            <div className={classes.productsHeader} style={{ color: "white" }}>
+              All Products
+            </div>
+            <div className={classes.dialogGrid}>
+              {products.map((product, index) => (
+                <Card key={index} className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={product.img}
+                    title={product.name}
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="h2"
+                      className={classes.cardTitle}
+                    >
+                      {product.name}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      component="p"
+                      className={classes.cardDesc}
+                    >
+                      High-quality {product.name.toLowerCase()} sourced directly
+                      from trusted manufacturers and producers. We ensure the
+                      best standards for export and import.
+                    </Typography>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </DialogContent>
+        </Dialog>
       </div>
     </Layout>
   );

@@ -4,11 +4,11 @@ import Link from "next/link";
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
-      background: "#121212",
-      color: "white",
+      background: "white",
+      color: "black",
     },
     outer: {
-      background: "#121212",
+      background: "white",
       fontFamily: "Gilroy, sans-serif",
       fontSize: "1.1rem",
       display: "flex",
@@ -64,16 +64,16 @@ const useStyles = makeStyles((theme) =>
       fontSize: "1.3rem",
       fontWeight: "bold",
       marginBottom: "0.5rem",
-      color: "white",
+      color: "black",
     },
     link: {
-      color: "#b0bec5",
+      color: "#777777",
       fontWeight: 600,
       marginBottom: "0.5rem",
     },
     phone: {
       fontSize: "1rem",
-      color: "#b0bec5",
+      color: "#777777",
       fontWeight: 600,
       marginBottom: "0.1rem",
     },
@@ -192,15 +192,14 @@ export default function footer() {
         <div className={classes.sectionSupport}>
           <div className={classes.header}>Support</div>
           <div className={classes.link}>
-            <div className={classes.email}>Email: Contact@marathaexports.com</div>
+            <div className={classes.email}>General Email: contact@marathaexports.com</div>
+            <div className={classes.email}>Support Email: support@marathaexports.com</div>
           </div>
 
           <div className={classes.phone}>
             <div>+917499968836</div>
-          </div>
-
-          <div className={classes.phone}>
             <div>+919527931986</div>
+            <div>+919823691959</div>
           </div>
         </div>
         <div className={classes.section}>
@@ -241,7 +240,7 @@ export default function footer() {
       </div>
 
       <div className={classes.locationRoot}>
-        Maratha Exports. AirPort , Karad, Maharashtra, India 416114.
+        Maratha Exports, Airport Karad, Dist: satara, KARAD, MAHARASHTRA, India, 415124
       </div>
     </div>
   );

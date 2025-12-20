@@ -6,7 +6,8 @@ const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       fontFamily: "Gilroy, sans-serif",
-      background: "white",
+      background: "#121212",
+      color: "white",
       position: "realtive",
       zIndex: 1,
       display: "flex",
@@ -14,7 +15,7 @@ const useStyles = makeStyles((theme) =>
       alignItems: "center",
     },
     circle1: {
-      background: "#F8BB86",
+      background: "#2979ff",
       width: "22.5rem",
       height: "22.5rem",
       position: "absolute",
@@ -39,7 +40,7 @@ const useStyles = makeStyles((theme) =>
       opacity: "10%",
       "-moz-opacity": "10%",
       "-khtml-opacity": "10%",
-      boxShadow: "0 0 0 0.5rem #F8BB86",
+      boxShadow: "0 0 0 0.5rem #2979ff",
       right: "5rem",
       bottom: "5rem",
       zIndex: 1,
